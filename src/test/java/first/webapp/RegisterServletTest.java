@@ -43,9 +43,9 @@ public class RegisterServletTest {
 		when(response.getWriter()).thenReturn(writer);
 		
 		when(request.getParameter("userName")).thenReturn("eric");
-		when(request.getParameter("userName")).thenReturn("password123");
-		when(request.getParameter("userName")).thenReturn("eric@gmail.com");
-		when(request.getParameter("userName")).thenReturn("English");
+		when(request.getParameter("password")).thenReturn("password123");
+		when(request.getParameter("email")).thenReturn("eric@gmail.com");
+		when(request.getParameter("language")).thenReturn("English");
 		
 		MockedStatic<DriverManager> mockedDriverManager = mockStatic(DriverManager.class);
 		mockedDriverManager.when(() -> DriverManager.getConnection(anyString(), anyString(), anyString())).thenReturn(mockConnection);

@@ -61,8 +61,8 @@ public class RegisterServletTest {
 	
 		verify(mockPreparedStatement).setString(1, "eric");
 		verify(mockPreparedStatement).setString(2, "password123");
-		verify(mockPreparedStatement).setString(2, "eric@gmail.com");
-		verify(mockPreparedStatement).setString(2, "English");
+		verify(mockPreparedStatement).setString(3, "eric@gmail.com");
+		verify(mockPreparedStatement).setString(4, "English");
 	}
 
 }
